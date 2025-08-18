@@ -136,3 +136,10 @@ The database automatically creates the `registrations` table with proper indexes
 - If Prisma client generation fails, run `npx prisma generate`
 - If there are schema mismatches, run `npx prisma migrate reset` (⚠️ **WARNING**: This will delete all data)
 - For database issues, use `npx prisma studio` to inspect the database visually
+
+## Vercel Deployment
+For Vercel deployment, the project includes:
+- `vercel.json` configuration for proper Prisma setup
+- Build script that runs `prisma generate` before building
+- `postinstall` script for dependency installation
+- Prisma client output configured for Vercel compatibility
