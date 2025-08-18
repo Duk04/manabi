@@ -1,5 +1,5 @@
 {
-  "name": "manabii-japanese-course",
+  "name": "miraya-japanese-course",
   "version": "1.0.0",
   "description": "A beautiful Japanese language course website with modern design and smooth animations",
   "main": "index.js",
@@ -41,6 +41,6 @@
     "tailwind",
     "framer-motion"
   ],
-  "author": "Manabii",
+  "author": "Miraya",
   "license": "MIT"
 }

@@ -63,7 +63,7 @@ const Footer = () => {
                     <span className="text-white font-bold text-lg">ま</span>
                   </div>
                   <span className="text-2xl font-bold bg-gradient-to-r from-sakura-400 to-matcha-400 bg-clip-text text-transparent">
-                    Manabi
+                    Miraya
                   </span>
                 </div>
                 <p className="text-fuji-300 leading-relaxed mb-6">
@@ -153,7 +153,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="flex items-center space-x-2 text-fuji-400"
             >
-              <span>© 2024 Manabii. Япон хэл сургах</span>
+              <span>© 2024 Miraya. Япон хэл сургах</span>
               <Heart className="w-4 h-4 text-sakura-500 fill-current" />
               <span>хүсэлтэй</span>
             </motion.div>

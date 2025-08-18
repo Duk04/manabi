@@ -47,7 +47,7 @@ const Navigation = () => {
               <span className="text-white font-bold text-lg">ま</span>
             </div>
             <span className="text-xl lg:text-2xl font-bold text-gradient">
-              Manabi
+              Miraya
             </span>
           </motion.div>
 

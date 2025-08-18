@@ -1,4 +1,4 @@
-# Manabii - Japanese Language Course Website
+# Miraya - Japanese Language Course Website
 
 A beautiful, modern website for an online Japanese language course featuring stunning Japanese-inspired design, smooth animations, and comprehensive functionality.
 
@@ -32,7 +32,7 @@ A beautiful, modern website for an online Japanese language course featuring stu
 
 ```bash
 git clone <repository-url>
-cd manabii
+cd miraya
 ```
 
 2. Install dependencies:
@@ -56,7 +56,7 @@ yarn dev
 ## 📁 Project Structure
 
 ```
-manabii/
+miraya/
 ├── app/
 │   ├── globals.css          # Global styles and Tailwind directives
 │   ├── layout.tsx           # Root layout with fonts and metadata
@@ -210,8 +210,8 @@ This project is licensed under the MIT License.
 
 For support or questions, please contact:
 
-- Email: hello@manabii.com
-- Website: [manabii.com](https://manabii.com)
+- Email: hello@miraya.com
+- Website: [miraya.com](https://miraya.com)
 
 ## 🙏 Acknowledgments
 

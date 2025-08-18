@@ -15,7 +15,7 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Manabii - Japanese Language Learning",
+  title: "Miraya - Japanese Language Learning",
   description:
     "Learn Japanese with our beautiful, comprehensive language program. Master N5 to N1 levels with authentic Japanese teaching methods.",
   keywords: "Japanese, language learning, N5, N4, N3, N2, N1, JLPT",

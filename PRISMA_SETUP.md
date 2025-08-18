@@ -1,4 +1,4 @@
-# Prisma Setup for Manabi Japanese Course
+# Prisma Setup for Miraya Japanese Course
 
 This project now uses Prisma as the ORM for database operations, specifically for managing student registrations.
 
