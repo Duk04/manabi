@@ -20,7 +20,7 @@ const Navigation = () => {
     { name: "Нүүр", href: "#home" },
     { name: "Бидний тухай", href: "#about" },
     { name: "Хичээлүүд", href: "#courses" },
-    { name: "Сэтгэгдэл", href: "#testimonials" },
+    // { name: "Сэтгэгдэл", href: "#testimonials" },
     { name: "Блог", href: "#blog" },
     { name: "Холбоо барих", href: "#contact" },
   ];
