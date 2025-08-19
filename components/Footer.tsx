@@ -13,23 +13,8 @@ const Footer = () => {
       { name: "N5 - Эхлэгч", href: "#courses" },
       { name: "N4 - Анхан шат", href: "#courses" },
       { name: "N3 - Дунд шат", href: "#courses" },
-      { name: "N2 - Дээд дунд шат", href: "#courses" },
-      { name: "N1 - Дээд шат", href: "#courses" },
     ],
-    resources: [
-      { name: "Нийтлэл", href: "#blog" },
-      { name: "Сурах зөвлөгөө", href: "#blog" },
-      { name: "Дүрмийн заавар", href: "#blog" },
-      { name: "Үгийн жагсаалт", href: "#blog" },
-      { name: "Соёлын мэдлэг", href: "#blog" },
-    ],
-    support: [
-      { name: "Бидэнтэй холбогдох", href: "#contact" },
-      { name: "Түгээмэл асуулт", href: "#contact" },
-      { name: "Сурагчдын дэмжлэг", href: "#contact" },
-      { name: "Техникийн тусламж", href: "#contact" },
-      { name: "Санал хүсэлт", href: "#contact" },
-    ],
+
     company: [
       { name: "Бидний тухай", href: "#about" },
       { name: "Манай багш нар", href: "#about" },
@@ -94,46 +79,6 @@ const Footer = () => {
                     <a
                       href={link.href}
                       className="text-fuji-300 hover:text-sakura-400 transition-colors duration-200"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <h4 className="text-lg font-semibold mb-4">Нөөц</h4>
-              <ul className="space-y-2">
-                {footerLinks.resources.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      className="text-fuji-300 hover:text-matcha-400 transition-colors duration-200"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <h4 className="text-lg font-semibold mb-4">Дэмжлэг</h4>
-              <ul className="space-y-2">
-                {footerLinks.support.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      className="text-fuji-300 hover:text-gold-400 transition-colors duration-200"
                     >
                       {link.name}
                     </a>

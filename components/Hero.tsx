@@ -114,13 +114,13 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8"
             >
-              <span className="text-fuji-800">Япон хэл</span>
+              <span className="text-fuji-800">Япон хэлийг богино</span>
               <br />
               <span className="text-gradient bg-gradient-to-r from-sakura-500 via-matcha-500 to-gold-500 bg-clip-text text-transparent">
-                сурах
+                хугацаанд мэргэжлийн түвшинд
               </span>
               <br />
-              <span className="text-fuji-800">Жинхэнэ арга заалтаар</span>
+              <span className="text-fuji-800">сурмаар байна уу?</span>
             </motion.h1>
 
             {/* Enhanced Description */}
@@ -130,9 +130,9 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-xl md:text-2xl text-fuji-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Манай дэлгэрэнгүй япон хэл сургалтаар япон хэл сурах сайхан аялалд
+              Манай япон хэлний сургалтаар япон хэл сурах сайхан аялалд
               эхлээрэй. Анхлан суралцагчаас дэлгэрэнгүй мэдлэгтэй болтол, япон
-              хэл, соёлын гоо үзэмжийг нээж мэдээрэй.
+              хэлийг нээж мэдээрэй.
             </motion.p>
 
             {/* Feature Pills */}

@@ -5,15 +5,14 @@ import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import {
   BookOpen,
-  Clock,
   ArrowRight,
   CheckCircle,
   StarIcon,
+  Clock,
   X,
   Calendar,
   Target,
   Award,
-  Globe,
   FileText,
   Headphones,
   Users as UsersIcon,
@@ -33,9 +32,9 @@ const Courses = () => {
       level: "N5",
       title: "Анхлан суралцагч",
       description:
-        "Энгийн мэндчилгээ, хирагана, катакана, үндсэн дүрмээр аялалдаа эхлээрэй",
-      duration: "8 долоо хоног",
-      price: "150,000₮",
+        "Энгийн мэндчилгээ, хирагана, катакана, үндсэн дүрмээр аялалаа эхлээрэй",
+
+      price: "250,000₮",
       features: [
         "Хирагана & Катакана",
         "Энгийн мэндчилгээ",
@@ -66,14 +65,12 @@ const Courses = () => {
         materials: [
           "N5 сурах бичиг",
           "Дасгал хийх дэвтэр",
-          "Аудио файлууд",
-          "Онлайн дасгал",
+
           "Туршилтын асуултууд",
         ],
-        schedule: "Даваа, Мягмар, Лхагва, Пүрэв, Баасан - 18:00-20:00",
-        instructor: "Танака Сэнсэй",
+        schedule: "Даваа, Мягмар, Лхагва, Пүрэв, Баасан - 9:00-17:00",
+        instructor: "Отгонцэцэг",
         students: "15-20 хүн",
-        certificate: "N5 түвшний гэрчилгээ",
       },
     },
     {
@@ -81,8 +78,8 @@ const Courses = () => {
       title: "Дунд түвшин",
       description:
         "Үндсэн мэдлэг дээрээ канжи, илүү төвөгтэй дүрэм, өдөр тутмын яриа",
-      duration: "12 долоо хоног",
-      price: "150,000₮",
+
+      price: "250,000₮",
       features: [
         "300 Канжи",
         "Дунд түвшний дүрэм",
@@ -96,7 +93,7 @@ const Courses = () => {
         overview:
           "N4 түвшин нь N5-ийн үргэлжлэл бөгөөд илүү төвөгтэй дүрмүүд, канжи үсгийг сурна.",
         curriculum: [
-          "300 канжи үсэг",
+          "300 Ханз үсэг",
           "Дунд түвшний дүрэм",
           "Өдөр тутмын яриа",
           "Төвөгтэй өгүүлбэр",
@@ -104,7 +101,7 @@ const Courses = () => {
           "Бичих дадлага",
         ],
         learningOutcomes: [
-          "300 канжи уншиж бичих",
+          "300 Ханз уншиж бичих",
           "Өдөр тутмын яриа хийх",
           "Төвөгтэй өгүүлбэр бүтээх",
           "Япон хэл унших",
@@ -112,27 +109,24 @@ const Courses = () => {
         ],
         materials: [
           "N4 сурах бичиг",
-          "Канжи дасгал дэвтэр",
-          "Аудио файлууд",
+          "Ханз дасгал дэвтэр",
           "Уншлага материал",
           "Туршилтын асуултууд",
         ],
-        schedule: "Даваа, Мягмар, Лхагва, Пүрэв, Баасан - 19:00-21:00",
-        instructor: "Сато Сэнсэй",
+        schedule: "Даваа, Мягмар, Лхагва, Пүрэв, Баасан - 9:00-17:00",
+        instructor: "Отгонцэцэг",
         students: "12-18 хүн",
-        certificate: "N4 түвшний гэрчилгээ",
       },
     },
     {
       level: "N3",
       title: "Дунд түвшин",
       description:
-        "Дунд түвшний дүрэм, бизнес япон хэл, соёлын нюансыг эзэмших",
-      duration: "16 долоо хоног",
+        "Дунд шатны дүрмийн мэдлэгээ бататгаж, бизнесийн япон хэлний онцлогийг гүнзгийрүүлэн эзэмших",
 
-      price: "150,000₮",
+      price: "250,000₮",
       features: [
-        "600 Канжи",
+        "600 Ханз",
         "Бизнес япон хэл",
         "Дэлгэрэнгүй дүрэм",
         "500+ үгсийн сан",
@@ -140,41 +134,34 @@ const Courses = () => {
       ],
       color: "gold",
       characters: ["商", "業", "日", "本", "語"],
-    },
-    {
-      level: "N2",
-      title: "Дээд дунд түвшин",
-      description: "Дэлгэрэнгүй дүрэм, академик япон хэл, мэргэжлийн харилцаа",
-      duration: "20 долоо хоног",
-
-      price: "150,000₮",
-      features: [
-        "1000 Канжи",
-        "Академик япон хэл",
-        "Төвөгтэй дүрэм",
-        "800+ үгсийн сан",
-        "Мэдээ уншлага",
-      ],
-      color: "fuji",
-      characters: ["新", "聞", "読", "解", "力"],
-    },
-    {
-      level: "N1",
-      title: "Дэлгэрэнгүй түвшин",
-      description:
-        "Академик болон мэргэжлийн амжилтын дэлгэрэнгүй түвшний япон хэл",
-      duration: "24 долоо хоног",
-
-      price: "150,000₮",
-      features: [
-        "2000+ Канжи",
-        "Уран зохиол",
-        "Дэлгэрэнгүй бичих",
-        "1000+ үгсийн сан",
-        "Дипломын ажил",
-      ],
-      color: "sakura",
-      characters: ["文", "学", "研", "究", "院"],
+      detailedInfo: {
+        overview:
+          "N3 түвшин нь N4-ийн үргэлжлэл бөгөөд илүү төвөгтэй дүрмүүд, Ханз үсгийг сурна.",
+        curriculum: [
+          "600 Ханз үсэг",
+          "Дунд түвшний дүрэм",
+          "Өдөр тутмын яриа",
+          "Төвөгтэй өгүүлбэр",
+          "Уншлага дадлага",
+          "Бичих дадлага",
+        ],
+        learningOutcomes: [
+          "600 Ханз уншиж бичих",
+          "Өдөр тутмын яриа хийх",
+          "Төвөгтэй өгүүлбэр бүтээх",
+          "Япон хэл унших",
+          "Бичих урлаг эзэмших",
+        ],
+        materials: [
+          "N3 сурах бичиг",
+          "Ханз дасгал дэвтэр",
+          "Уншлага материал",
+          "Туршилтын асуултууд",
+        ],
+        schedule: "Даваа, Мягмар, Лхагва, Пүрэв, Баасан - 9:00-17:00",
+        instructor: "Отгонцэцэг",
+        students: "12-18 хүн",
+      },
     },
   ];
 
@@ -218,7 +205,6 @@ const Courses = () => {
       ref={ref}
       className="section-padding matcha-bg relative overflow-hidden"
     >
-      {/* Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-sakura-100 rounded-full opacity-20 -translate-y-48 -translate-x-48"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-gold-100 rounded-full opacity-20 translate-y-32 translate-x-32"></div>
 
@@ -308,7 +294,6 @@ const Courses = () => {
                   ))}
                 </div>
 
-                {/* Course Info */}
                 <h3 className="text-xl font-bold text-fuji-800 mb-3">
                   {course.title}
                 </h3>
@@ -316,14 +301,11 @@ const Courses = () => {
                   {course.description}
                 </p>
 
-                {/* Course Stats */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-1">
-                      <Clock className={`w-4 h-4 ${colors.icon}`} />
-                      <span className="text-sm text-fuji-600">
-                        {course.duration}
-                      </span>
+                      <span className="text-sm text-fuji-600">Үнэ</span>
+                      <span className="text-sm text-fuji-600">₮</span>
                     </div>
                   </div>
                   <div className="text-2xl font-bold text-fuji-800">
@@ -331,7 +313,6 @@ const Courses = () => {
                   </div>
                 </div>
 
-                {/* Features */}
                 <div className="space-y-3 mb-8">
                   {course.features.map((feature, featureIndex) => (
                     <motion.div
@@ -350,7 +331,6 @@ const Courses = () => {
                   ))}
                 </div>
 
-                {/* CTA Button */}
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -364,7 +344,6 @@ const Courses = () => {
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
 
-                {/* Popular Badge */}
                 {course.level === "N5" && (
                   <div className="absolute top-4 right-4 bg-gold-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center space-x-2 gap-1">
                     <StarIcon className="w-4 h-4 text-white" />
@@ -385,7 +364,6 @@ const Courses = () => {
         ></motion.div>
       </div>
 
-      {/* Detailed View Modal */}
       <AnimatePresence>
         {isModalOpen && selectedCourse && (
           <motion.div
@@ -402,7 +380,6 @@ const Courses = () => {
               className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Modal Header */}
               <div className="sticky top-0 bg-white rounded-t-3xl p-6 border-b border-gray-100">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
@@ -437,9 +414,7 @@ const Courses = () => {
                 </div>
               </div>
 
-              {/* Modal Content */}
               <div className="p-6 space-y-8">
-                {/* Overview */}
                 <div>
                   <h3 className="text-xl font-semibold text-fuji-800 mb-4 flex items-center">
                     <BookOpen className="w-5 h-5 mr-2 text-matcha-600" />
@@ -450,9 +425,7 @@ const Courses = () => {
                   </p>
                 </div>
 
-                {/* Course Details Grid */}
                 <div className="grid md:grid-cols-2 gap-6">
-                  {/* Curriculum */}
                   <div className="bg-gradient-to-br from-sakura-50 to-sakura-100 rounded-2xl p-6">
                     <h4 className="text-lg font-semibold text-sakura-800 mb-4 flex items-center">
                       <Target className="w-5 h-5 mr-2" />
@@ -475,7 +448,6 @@ const Courses = () => {
                     </ul>
                   </div>
 
-                  {/* Learning Outcomes */}
                   <div className="bg-gradient-to-br from-matcha-50 to-matcha-100 rounded-2xl p-6">
                     <h4 className="text-lg font-semibold text-matcha-800 mb-4 flex items-center">
                       <Award className="w-5 h-5 mr-2" />
@@ -499,9 +471,7 @@ const Courses = () => {
                   </div>
                 </div>
 
-                {/* Materials and Schedule */}
                 <div className="grid md:grid-cols-2 gap-6">
-                  {/* Materials */}
                   <div className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-6">
                     <h4 className="text-lg font-semibold text-gold-800 mb-4 flex items-center">
                       <FileText className="w-5 h-5 mr-2" />
@@ -524,7 +494,6 @@ const Courses = () => {
                     </ul>
                   </div>
 
-                  {/* Schedule and Info */}
                   <div className="bg-gradient-to-br from-fuji-50 to-fuji-100 rounded-2xl p-6">
                     <h4 className="text-lg font-semibold text-fuji-800 mb-4 flex items-center">
                       <Calendar className="w-5 h-5 mr-2" />
@@ -547,12 +516,6 @@ const Courses = () => {
                         <Headphones className="w-4 h-4 text-fuji-600" />
                         <span className="text-sm text-fuji-700">
                           Сурагч: {selectedCourse.detailedInfo.students}
-                        </span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Award className="w-4 h-4 text-fuji-600" />
-                        <span className="text-sm text-fuji-700">
-                          {selectedCourse.detailedInfo.certificate}
                         </span>
                       </div>
                     </div>
