@@ -145,36 +145,74 @@ const Registration = () => {
     setSubmitStatus("idle");
 
     try {
+      console.log("Submitting form data:", formData);
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+
       const response = await fetch("/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
+        signal: controller.signal,
       });
 
-      const result = await response.json();
+      clearTimeout(timeoutId);
 
-      if (response.ok) {
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          birthDate: "",
-          courseLevel: "",
-          preferredSchedule: "",
-          experience: "",
-          goals: "",
-        });
-        setValidationErrors({});
-        setSubmitStatus("success");
-        setTimeout(() => setSubmitStatus("idle"), 5000);
-      } else {
-        throw new Error(result.error || "Failed to submit registration");
+      console.log("Response status:", response.status);
+      console.log("Response headers:", response.headers);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Response error text:", errorText);
+
+        let errorMessage = "Failed to submit registration";
+        try {
+          const errorData = JSON.parse(errorText);
+          errorMessage = errorData.error || errorMessage;
+        } catch (e) {
+          console.error("Could not parse error response:", e);
+        }
+
+        throw new Error(errorMessage);
       }
+
+      const result = await response.json();
+      console.log("Success response:", result);
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        birthDate: "",
+        courseLevel: "",
+        preferredSchedule: "",
+        experience: "",
+        goals: "",
+      });
+      setValidationErrors({});
+      setSubmitStatus("success");
+      setTimeout(() => setSubmitStatus("idle"), 5000);
     } catch (error) {
       console.error("Error submitting registration:", error);
+
+      let errorMessage = "Уучлаарай, алдаа гарлаа. Дахин оролдоно уу.";
+      if (error instanceof Error) {
+        if (error.name === "AbortError") {
+          errorMessage = "Хугацаа хэтэрлээ. Дахин оролдоно уу.";
+        } else if (error.message.includes("Failed to fetch")) {
+          errorMessage =
+            "Серверт холбогдох боломжгүй байна. Интернэт холболтоо шалгана уу.";
+        } else if (error.message.includes("Database")) {
+          errorMessage = "Мэдээллийн сангийн алдаа. Дахин оролдоно уу.";
+        } else {
+          errorMessage = error.message;
+        }
+      }
+
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus("idle"), 5000);
     } finally {
