@@ -77,21 +77,21 @@ const Courses = () => {
       level: "N4",
       title: "Дунд түвшин",
       description:
-        "Үндсэн мэдлэг дээрээ канжи, илүү төвөгтэй дүрэм, өдөр тутмын яриа",
+        "Үндсэн мэдлэг дээрээ ханз, илүү төвөгтэй дүрэм, өдөр тутмын яриа",
 
       price: "250,000₮",
       features: [
-        "300 Канжи",
+        "300 Ханз",
         "Дунд түвшний дүрэм",
         "Өдөр тутмын яриа",
         "200+ үгсийн сан",
         "Уншлага дадлага",
       ],
       color: "matcha",
-      characters: ["漢", "字", "学", "習", "中"],
+      characters: ["漢", "字", "学", "習", "中", "文"],
       detailedInfo: {
         overview:
-          "N4 түвшин нь N5-ийн үргэлжлэл бөгөөд илүү төвөгтэй дүрмүүд, канжи үсгийг сурна.",
+          "N4 түвшин нь N5-ийн үргэлжлэл бөгөөд илүү төвөгтэй дүрмүүд, Ханз үсгийг сурна.",
         curriculum: [
           "300 Ханз үсэг",
           "Дунд түвшний дүрэм",
@@ -209,7 +209,6 @@ const Courses = () => {
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-gold-100 rounded-full opacity-20 translate-y-32 translate-x-32"></div>
 
       <div className="container-custom relative z-10">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -250,7 +249,6 @@ const Courses = () => {
           </motion.p>
         </motion.div>
 
-        {/* Course Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => {
             const colors = getColorClasses(course.color);
@@ -262,12 +260,10 @@ const Courses = () => {
                 transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
                 className={`bg-white rounded-3xl p-8 shadow-xl card-hover border ${colors.border} relative overflow-hidden`}
               >
-                {/* Background Pattern */}
                 <div
                   className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${colors.bg} rounded-full opacity-20 -translate-y-16 translate-x-16`}
                 ></div>
 
-                {/* Level Badge */}
                 <div
                   className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${colors.bg} rounded-2xl mb-6 relative z-10`}
                 >
@@ -276,7 +272,6 @@ const Courses = () => {
                   </span>
                 </div>
 
-                {/* Japanese Characters */}
                 <div className="flex space-x-2 mb-6">
                   {course.characters.map((char, charIndex) => (
                     <motion.div
@@ -355,7 +350,6 @@ const Courses = () => {
           })}
         </div>
 
-        {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
